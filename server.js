@@ -22,11 +22,11 @@ mongoose.connection.on('connected',()=>{
     console.log('Database connected !')
 })
 
-const server=require('http').createServer(app)
+const server=require('https').createServer(app)
 const PORT=5000
 const io=require('socket.io')(server,{
     cors:{
-        origin:'https://willowy-pixie-bc5026.netlify.app',
+        origin:'https://symphonious-pasca-2233b5.netlify.app',
         methode:['GET','POST']
     }
 })
